@@ -1,15 +1,87 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+:root {
+  --line--border--fill: rgb(94, 94, 239);
+  --line--border--empty: #e0e0e0;
+}
 
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Playwrite GB S", cursive;
   display: flex;
-  flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
   overflow: hidden;
   margin: 0;
+}
+.container {
+  /* background-color: rgb(237, 221, 197, 0.3); */
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin-bottom: 15%;
+  position: relative;
+}
+.progress-container::before {
+  content: "";
+  background-color: var(--line--border--empty);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+.progress {
+  background-color: var(--line--border--fill);
+  height: 4px;
+  width: 0%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.circle {
+  background-color: white;
+  font-size: 14px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid var(--line--border--empty);
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.circle.active {
+  border-color: var(--line--border--fill);
+  background-color: rgb(169, 121, 214);
+}
+.btn {
+  display: inline-block;
+  background-color: var(--line--border--fill);
+  color: black;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.btn:active {
+  transform: scale(0.85);
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:disabled {
+  background-color: var(--line--border--empty);
+  cursor: not-allowed;
 }
