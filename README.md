@@ -1,7 +1,7 @@
 ﻿# From Beginner to Builder: 50 Projects in HTML, CSS & JavaScript.
 
 - [x] 0.Expanding Cards
-- [ ] 1.Progress Steps
+- [x] 1.Progress Steps
 - [ ] 2.Rotating Navigation Animation
 - [ ] 3.Hidden Search Widget
 - [ ] 4.Blurry Loading
