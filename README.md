@@ -2,8 +2,8 @@
 
 - [x] 0.Expanding Cards
 - [x] 1.Progress Steps
-- [ ] 2.Rotating Navigation Animation
-- [ ] 3.Hidden Search Widget
+- [x] 2.Rotating Navigation Animation
+- [x] 3.Hidden Search Widget
 - [ ] 4.Blurry Loading
 - [ ] 5.Scroll Animation
 - [ ] 6.Split Landing Page
