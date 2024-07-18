@@ -4,7 +4,7 @@
 - [x] 1.Progress Steps
 - [x] 2.Rotating Navigation Animation
 - [x] 3.Hidden Search Widget
-- [ ] 4.Blurry Loading
+- [x] 4.Blurry Loading
 - [ ] 5.Scroll Animation
 - [ ] 6.Split Landing Page
 - [ ] 7.Form Wave
